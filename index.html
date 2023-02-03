@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body id="body">
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort onclick="sortTable(0, this)">Имя</th>
+            <th data-sort onclick="sortTable(1, this)">Фамилия</th>
+            <th data-sort onclick="sortTable(2, this)">Описание</th>
+            <th data-sort onclick="sortTable(3, this)">Цвет глаз</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-data"></tbody>
+      </table>
+    </div>
+
+    <nav class="pagination-container">
+      <button
+        class="pagination-button"
+        id="prev-button"
+        title="Previous page"
+        aria-label="Previous page"
+      >
+        &lt;
+      </button>
+      <div id="pagination-numbers"></div>
+      <button
+        class="pagination-button"
+        id="next-button"
+        title="Next page"
+        aria-label="Next page"
+      >
+        &gt;
+      </button>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
